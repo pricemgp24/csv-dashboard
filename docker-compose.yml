@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   backend:
-    image: backend-image
+    image: pricemgp24/backend-image:v1
     container_name: backend-container
     build:
       context: ./backend
@@ -12,7 +12,7 @@ services:
       - my_network
 
   frontend:
-    image: frontend-image
+    image: pricemgp24/frontend-image:v1
     container_name: frontend-container
     build:
       context: ./frontend
